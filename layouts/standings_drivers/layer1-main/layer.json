@@ -177,6 +177,11 @@
     "Triggers": [
         {
             "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+            "Property": "Foreground",
+            "Value": "000000",
+        },
+        {
+            "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
             "Property": "ColorizeBackgroundOptions.Enabled",
             "Value": true
         }
@@ -200,6 +205,11 @@
         "BlendPercentage": 100
     },
     "Triggers": [
+         {
+            "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+            "Property": "Foreground",
+            "Value": "000000",
+        },
         {
             "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
             "Property": "ColorizeBackgroundOptions.Enabled",
@@ -225,6 +235,11 @@
         "BlendPercentage": 100
     },
     "Triggers": [
+         {
+            "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+            "Property": "Foreground",
+            "Value": "000000",
+        },
         {
             "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
             "Property": "ColorizeBackgroundOptions.Enabled",
@@ -254,6 +269,11 @@
     "Triggers": [
         {
             "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+            "Property": "Foreground",
+            "Value": "000000",
+        },
+        {
+            "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
             "Property": "ColorizeBackgroundOptions.Enabled",
             "Value": true
         }
@@ -277,6 +297,11 @@
         "BlendPercentage": 100
     },
     "Triggers": [
+         {
+            "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+            "Property": "Foreground",
+            "Value": "000000",
+        },
         {
             "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
             "Property": "ColorizeBackgroundOptions.Enabled",
