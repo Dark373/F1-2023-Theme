@@ -2,7 +2,8 @@
     "BlockType" : "stack",
     "Witdh" : "*",
     "Background": "1F1F1F",
-    "MarginRight": 25,
+    "MarginRight": 12,
+    "MarginLeft": 12,
     "Orientation" : "Vertical",
     "Items" : [
         {
