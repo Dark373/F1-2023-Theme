@@ -1,0 +1,50 @@
+{
+                "Name": "mainTable",
+                "BlockType": "table",
+                "Margin" : "{MarginTable}",
+                "TableOptions": {
+                    "ItemsSource": "{Session.Drivers}",
+                    "RowSpacing": 30,
+                    "HeaderTemplate": {
+                        "BlockType": "text",
+                        "MarginBottom": 12,
+                        "FontSize": 30,
+                        "TextOptionsExtern" : "tableColumnHeader"
+                    },
+                    "Columns": [
+                        {
+                            "Header": "[GRID]",
+                            "Template": {
+                                "Padding": "40, 0",
+                                "MarginLeft": 0,
+    "Background": "{BackgroundDefault}",
+    "ColorizeBackground": {
+        "Enabled": false,
+        "Color": "#ffffff",
+        "BlendPercentage": 100
+    },
+    "Triggers": [
+        {
+            "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+            "Property": "Foreground",
+            "Value": "000000",
+        },
+        {
+            "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+            "Property": "ColorizeBackgroundOptions.Enabled",
+            "Value": true
+        }
+    ],
+                                "BlockType": "text",
+                                "Source": "{Item.GridPosition}",
+                                "HorizontalAlignment": "Left",
+                                "TextOptions": {
+                                    "FontName": "{FontNameDefault}",
+                                    "FontSize": 30,
+                                    "HorizontalAlignment": "Center"
+                                }
+                            }
+                        },
+                    ]
+                }
+            }
