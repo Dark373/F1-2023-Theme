@@ -32,7 +32,7 @@
                     "Name": "headerSessionLine",
                     "BlockType": "stack",
                     "VerticalAlignment": "Center",
-                    "MarginLeft": 10,
+                    "MarginLeft": 0,
                     "Spacing": 0,
                     "Items": [
                         {
