@@ -176,7 +176,7 @@
 {
             "BlockType" : "shape",
             "Width" : "350",
-            "Height" : 10,
+            "Height" : 4,
             "ShapeOptions" : {
                 "ShapeType" : "rectangle",
                 "Fill" : "#FFFFFF"
