@@ -23,7 +23,7 @@
                             "VerticalAlignment": "Center",
                             "Source": "{Season.LeagueInfo.LeagueShortName, Converter=StringToUpperString} {Season.Name, Converter=StringToUpperString} STATISTICS",                            
                             "FontName": "{FontNameBold}",
-                            "FontSize": 25,
+                            "FontSize": 20,
                             "Foreground": "FFFFFF"
                         },
                         {                            
@@ -45,7 +45,7 @@
                             "VerticalAlignment": "Center",
                             "Source": "{Statistics.Header, Converter=StringToUpperString}",
                             "FontName": "{FontNameBold}",
-                            "FontSize": 40,
+                            "FontSize": 30,
                             "Foreground": "{Foregroundwhithe}"
                         },
 
