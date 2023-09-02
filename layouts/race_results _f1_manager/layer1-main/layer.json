@@ -92,7 +92,7 @@
                                 "Source": "{Item.PitsCount}",
                                 "HorizontalAlignment": "Left",
                                 "TextOptions": {
-                                    "FontName": "{FontNameDefault}",
+                                    "FontName": "{Formula1-Italic}",
                                     "FontSize": 36,
                                     "HorizontalAlignment": "Center"
                                 }
@@ -140,7 +140,7 @@
                                 "TextOptionsExtern" : "driverCell",
                                 "RenderIf" : "",
                                 "TextOptions": {
-                                    "FontName": "{FontNameDefault}",
+                                    "FontName": "{Formula1-Italic}",
                                     "FontSize": 36,
                                     "HorizontalAlignment": "Center"
                                 },
@@ -175,7 +175,7 @@
                                 "Source": "{Item.IntervalRace}",
                                 "HorizontalAlignment": "Left",
                                 "TextOptions": {
-                                    "FontName": "{FontNameDefault}",
+                                    "FontName": "{Formula1-Italic}",
                                     "FontSize": 36,
                                     "HorizontalAlignment": "Center"
                                 }
