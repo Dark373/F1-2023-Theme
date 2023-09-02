@@ -3,7 +3,7 @@
     "Source": "<position>",
     "Width": 45,
     "Height": 0,
-    "FontName": "{FontNameDefault}",
+    "FontName": "{Formula1-Italic}",
     "FontSize": 30,
     "Foreground": "{BackgroundAlt1}",
     "TextOptions": {
