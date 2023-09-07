@@ -8,5 +8,6 @@
   "RenderPenaltySeparator": true,
   "RenderPenaltyVerdict": false,
   "SecondCalendarEventsInColumn": 7,
+  "ReserveDriverMax": 0,
   "StewardReportType": "Report"
 }
