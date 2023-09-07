@@ -75,6 +75,7 @@
                                 "ItemStackOptions": {
                                     "RenderIf": "{RenderReserveDriver}",
                                     "ItemSource": "{Lineups.LineupsReserves}",
+                                    "Limit": "{ReserveDriverMax}",
                                     "Template": {
                                         "BlockType": "component",
                                         "ComponentName": "LineupDriverReserve_rn"
@@ -87,6 +88,8 @@
                                 "ItemStackOptions": {
                                     "RenderIf": "{RenderReserveDriver}",
                                     "ItemSource": "{Lineups.LineupsReserves}",
+                                    "Limit": "{ReserveDriverMax}",
+                                    "IndexStart": "{ReserveDriverMax}",
                                     "Template": {
                                         "BlockType": "component",
                                         "ComponentName": "LineupDriverReserve_rn"
