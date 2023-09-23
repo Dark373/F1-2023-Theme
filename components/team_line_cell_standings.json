@@ -1,0 +1,83 @@
+{
+    "BlockType": "dock",
+    "MarginRight": "",
+    "VerticalAlignment" : "Center",
+    "Background": "{BackgroundDefault}",
+    "ColorizeBackground": {
+        "Enabled": false,
+        "Color": "#ffffff",
+        "BlendPercentage": 100
+    },
+    "Triggers": [
+        {
+            "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+            "Property": "ColorizeBackgroundOptions.Enabled",
+            "Value": true
+        }
+    ],
+    "Items": [
+        {
+            "BlockType": "stack",                    
+            "HorizontalAlignment": "Left",
+            "VerticalAlignment": "Center",
+            "Items": [
+                {
+                    "BlockType": "image",
+                    "Triggers": [
+        {
+            "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+            "Property": "Background",
+            "Value": "{Item.Team.Color}"
+        }
+    ],
+                    "MarginLeft" : 0,
+                    "Height": 40,
+                    "Width": 40,
+                    "MarginRight": 25,
+                    "Padding": "12, 0",
+                    "VerticalAlignment": "Center",
+                    "ImageOptions": {
+                        "Path": "{Item.Team.LogoPath}",
+                        "VerticalAlignment": "Center"
+                    },
+                    "RenderIf" : "<RenderIf>"
+                },
+                {
+                    "BlockType": "text",
+                    "MaxWidth": 1000,                    
+                    "Source": "[{Item.Team.Name, Converter=StringToUpperString}]",
+                    "HorizontalAlignment": "Left",
+                    "MarginRight": 40,
+                    "FontSize": 30,
+                    "VerticalAlignment": "Center",
+                    "Triggers": [
+        {
+            "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+            "Property": "Foreground",
+            "Value": "000000",
+        }
+    ],
+                    "Foreground": "ABACB5",
+                    "TextOptionsExtern": "teamCell",
+                    "Triggers": [
+                                                {
+                                                    "Condition": "{RenderTeamColours}",
+                                                    "Setters": [
+                                                        {
+                                                            "Property": "Foreground",
+                                                            "Value": "{Item.Team.Color}"
+                                                        },
+                                                         
+                                                    ]
+                                                },
+                                                {
+            "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
+            "Property": "Foreground",
+            "Value": "000000",
+        }
+                                             ]
+                }               
+            ]
+        }
+    ]
+}

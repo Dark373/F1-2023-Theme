@@ -1,0 +1,99 @@
+{
+    "BlockType": "dock",
+    //"PaddingLeft": 12,
+    "PaddingRight": 0,
+    "RenderIf" : "<renderif>",
+    "BackgroundImage": "images/grid/{Item.Team.Name}.png",
+    "Height" : 0,
+    "Width" : 0,
+    "MarginBottom" : 35,
+    "Triggers" : [
+        {
+            "Condition" : "<renderif>",
+            "Setters" : [
+                {
+                    "Property" : "Height",
+                    "Value" : 64
+                },
+                {
+                    "Property" : "Width",
+                    "Value" : 850
+                }
+            ]
+        }
+    ],
+    "Items": [
+        {
+            "BlockType": "stack",
+            "HorizontalAlignment": "Left",
+            "VerticalAlignment": "Center",
+            "Items": [
+                 {
+                    "BlockType": "text",
+                    "Width" : 160,
+                    "Height" : 65,
+                    "Source": "[{Item.PositionString}TH]",
+                    "HorizontalAlignment": "Left",
+                    "VerticalAlignment": "Center",
+                    "MarginRight": 0,
+                    "Foreground" : "#000000",
+                    "Background": "",
+                    "TextOptionsExtern" : "tableCellBold",
+                    "TextOptions" : {
+                        "FontSize": 30,
+                        "HorizontalAlignment" : "Center"
+                    }
+                },
+                {
+                    "BlockType": "text",
+                    "MarginLeft": 20,
+                    "Source": "{Item.Driver.Name, Converter=StringToUpperString}",
+                    "HorizontalAlignment": "Left",
+                    "VerticalAlignment": "Center",
+                    "FontSize": 38,
+                    "MarginBottom" : 0,
+                    "TextOptionsExtern" : "tableCellBold",
+                    "Foreground" : "#ffffff",
+                    "FontName": "{FontNameBold}",
+                    "Triggers" : [
+                        {
+                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=mercedes}",
+                            "Property" : "Foreground",
+                            "Value" : "#000000"
+                        },
+                        {
+                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=ferrari}",
+                            "Property" : "Foreground",
+                            "Value" : "#000000"
+                        },
+                        {
+                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=haas}",
+                            "Property" : "Foreground",
+                            "Value" : "#000000"
+                        },
+                        {
+                                                    "Condition": "{RealNameOnGridRender}",
+                                                    "Setters": [
+                                                        {
+                                                            "Property": "Source",
+                                                            "Value": "{Item.Driver.RealName, Converter=StringToUpperString}"
+                                                        },
+                                                         
+                                                    ]
+                                                },
+                                                {
+                                                    "Condition": "{InGameNameOnGridRender}",
+                                                    "Setters": [
+                                                        {
+                                                            "Property": "Source",
+                                                            "Value": "{Item.Driver.InGameName, Converter=StringToUpperString}"
+                                                        },
+                                                         
+                                                    ]
+                                                }
+                    ]
+                }
+            ]
+        },
+    ]
+}

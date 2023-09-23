@@ -1,0 +1,51 @@
+//header block
+{
+    "Name": "headerBlock",
+    "BlockType": "dock",
+    "Orientation": "Horizontal",
+    "Items": [
+        //headerLeft
+        {
+            "Name": "headerLeftPart",
+            "BlockType": "stack",
+            "Orientation": "Vertical",
+            "Spacing": 0,
+            "HorizontalAlignment": "Left",
+            "Items": [
+                //league name
+                {
+                    "BlockType" : "stack",
+                    "VerticalAlignment" : "Center",
+                    "Items" :
+                    [
+                         {                            
+                            "BlockType": "text",
+                            "VerticalAlignment": "Center",
+                            "Source": "{Season.Name, Converter=StringToUpperString} TEAM",                            
+                            "FontName": "{FontNameBold}",
+                            "FontSize": 60,
+                            "Foreground": "000000"
+                        },
+                        ]
+                },
+                {
+                    "Name": "headerSessionLine",
+                    "BlockType": "stack",
+                    "VerticalAlignment": "Center",
+                    "MarginBottom": 0,
+                    "Spacing": 0,
+                    "Items": [
+                        {
+                            "BlockType": "text",
+                            "VerticalAlignment": "Center",
+                            "Source": "STANDINGS",
+                            "FontName": "{Formula1-Bold}",
+                            "FontSize": 60,
+                            "Foreground": "000000"
+                        },
+                    ]
+                },       
+            ]
+        },
+    ]
+}
