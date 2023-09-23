@@ -1,0 +1,14 @@
+{
+  "RenderReserveDriver": true,
+  "RenderInGameNameOnLineUps": true,
+  "RenderTeamColours": true,
+  "RealNameOnGridRenders": false,
+  "InGameNameOnGridRenders": false,
+  "DriverNameOnLineUp": false,
+  "RenderPenaltySeparator": true,
+  "RenderPenaltyVerdict": false,
+  "SecondCalendarEventsInColumn": 7,
+  "ReserveDriverMax": 10,
+  "DriverStandingsMax": 10,
+  "StewardReportType": "Report"
+}
