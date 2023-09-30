@@ -1,0 +1,19 @@
+{
+    "BlockRoot": {
+        "Name": "root",
+        "BlockType": "dock",
+        "Orientation" : "Vertical",
+        "Items": [
+            {
+                "BlockType" : "component",
+                "RenderIf": "{DarkOfficialRenders}",
+                "ComponentName" : "bg_cal_dark"
+            },
+            {
+                "BlockType" : "component",
+                "RenderIf": "{DarkOfficialRenders, Converter=BoolReverse}",
+                "ComponentName" : "bg_cal"
+            }
+        ],
+    }
+}
