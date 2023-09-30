@@ -1,0 +1,19 @@
+{
+  "DarkOfficialRenders": false,
+  "RenderReserveDriver": true,
+  "RenderInGameNameOnLineUps": true,
+  "RenderTeamColours": true,
+  "RealNameOnRenders": true,
+  "InGameNameOnRenders": true,
+  "DriverNameOnLineUp": true,
+  "FullNameOnRender": true,
+  "RenderPenaltySeparator": true,
+  "RenderPenaltyVerdict": false,
+  "TeamChampColour": true,
+  "DriverChampColour": true,
+  "FontSizeOnTheGridRender": 38,
+  "SecondCalendarEventsInColumn": 7,
+  "ReserveDriverMax": 0,
+  "DriverStandingsMax": 10,
+  "StewardReportType": "Report"
+}
