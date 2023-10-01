@@ -51,7 +51,7 @@
                     "Source": "{Item.Driver.Name, Converter=StringToUpperString}",
                     "HorizontalAlignment": "Left",
                     "VerticalAlignment": "Center",
-                    "FontSize": "{FontSizeTheGridRender}",
+                    "FontSize": "{FontSizeOnTheGridRender}",
                     "MarginBottom" : 0,
                     "TextOptionsExtern" : "tableCellBold",
                     "Foreground" : "#ffffff",
