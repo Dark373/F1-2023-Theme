@@ -40,14 +40,6 @@
                                 }
                             }
                         },
-                        {
-                            "Header": "",
-                            "Template":
-                            {
-                                "BlockType" : "component",
-                                "ComponentName" : "separator"    
-                            }
-                        },
 
                         //driver line
                         {
