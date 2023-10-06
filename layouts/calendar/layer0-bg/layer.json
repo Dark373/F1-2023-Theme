@@ -1,12 +1,12 @@
 {
     "BlockRoot": {
         "Name": "root",
-        "BlockType": "stack",
+        "BlockType": "dock",
+        "Orientation" : "Vertical",
         "Items": [
             {
-                "Name": "bgf123",
-                "BlockType": "image", 
-                "Source": "bg_cal.png"
+                "BlockType" : "component",
+                "ComponentName" : "bg_cal"
             }
         ]
     }
