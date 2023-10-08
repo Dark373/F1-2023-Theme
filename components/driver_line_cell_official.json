@@ -120,7 +120,7 @@
                                                     ]
                                                 },
                         {
-                                                    "Condition": "{RealNameOnGridRenders}",
+                                                    "Condition": "{RealNameOnRenders}",
                                                     "Setters": [
                                                         {
                                                             "Property": "Source",
@@ -130,7 +130,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "Condition": "{InGameNameOnGridRenders}",
+                                                    "Condition": "{InGameNameRenders}",
                                                     "Setters": [
                                                         {
                                                             "Property": "Source",
@@ -140,7 +140,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "Condition": "{FullNameOnRender}",
+                                                    "Condition": "{FullNameOnRenders}",
                                                     "Setters": [
                                                         {
                                                             "Property": "Source",
