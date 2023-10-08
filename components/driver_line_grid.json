@@ -73,7 +73,7 @@
                             "Value" : "#000000"
                         },
                         {
-                                                    "Condition": "{RealNameOnRender}",
+                                                    "Condition": "{RealNameOnRenders}",
                                                     "Setters": [
                                                         {
                                                             "Property": "Source",
@@ -83,7 +83,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "Condition": "{InGameNameOnRender}",
+                                                    "Condition": "{InGameNameOnRenders}",
                                                     "Setters": [
                                                         {
                                                             "Property": "Source",
@@ -93,7 +93,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "Condition": "{FullNameOnRender}",
+                                                    "Condition": "{FullNameOnRenders}",
                                                     "Setters": [
                                                         {
                                                             "Property": "Source",
