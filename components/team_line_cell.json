@@ -85,6 +85,11 @@
                             "Property": "Background",
                             "Value": "{BackgroundDefault}"
                       },
+                      {
+                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=McLaren}",
+                            "Property" : "Source",
+                            "Value" : "images/mclaren.white"
+                      },
                    ],
                     "MarginLeft" : 55,
                     "Height": 40,
