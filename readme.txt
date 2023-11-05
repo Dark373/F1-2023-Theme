@@ -19,4 +19,8 @@ components -> event_calendar, look for this line:
 
 change number on the end to how many pre season races you have. Set 0 for none.
 
+DriverLimit: 10 & StartPositionsFrom: 0 = Top 10
+(Change DriverLimit to get any Top ... positions you wish)
 
+DriverLimit: 20 & StartPositionsFrom: 9 = Positions 10-20
+(Or all positions past P9)
