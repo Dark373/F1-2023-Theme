@@ -295,12 +295,12 @@
                                 {
                                             "Condition" : "{Item.PositionString, Converter=StringEquals, Parameter=2}",
                                             "Property" : "MarginTop",
-                                            "Value" : 20
+                                            "Value" : 21
                                 },
                                 {
                                             "Condition" : "{Item.PositionString, Converter=StringEquals, Parameter=3}",
                                             "Property" : "MarginTop",
-                                            "Value" : "0"
+                                            "Value" : "1"
                                 }
                             ],
                     "Items": [
