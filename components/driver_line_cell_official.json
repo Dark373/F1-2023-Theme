@@ -177,7 +177,22 @@
                             "Padding": "-40,0",
                             "HorizontalAlignment" : "Right",
                             "Source" : "images/suit/{Item.Team.Name}_{Item.SeatPosition}",
-                            "Height" : "180"
+                            "Height" : "180",
+                            "Triggers" : [
+                                              {
+                                                    "Condition": "{Item.SeatPosition, Converter=NumberEquals, Parameter=0}",
+                                                    "Setters": [
+                                                        {
+                                                            "Property": "Source",
+                                                            "Value": "images/suit/reserve.png"
+                                                        },
+                                                        {
+                                                            "Property": "MarginTop",
+                                                            "Value": -12
+                                                        },  
+                                                    ]
+                                                },
+                                             ]
                         },
                     ]
                 },
