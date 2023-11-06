@@ -87,7 +87,7 @@
                                     "BlockType" : "text",
                                     "Margin" : "10,5,0,0",
 "Orientation" : "Horizontal",
-                                    "Source" : "[{Item.PositionString}]",
+                                    "Source" : "[{Item.Position}]",
                                     "Foreground" : "#ffffff",
                                     "FontName" : "{Formula1-Black}",
                                     "FontSize" : "60",
@@ -312,7 +312,18 @@
                     "FontSize" : "18",
                     "Padding" : "120,10",
                     "HorizontalAlignment" : "Center",
-                    "VerticalAlignment" : "Center"
+                    "VerticalAlignment" : "Center",
+                    "Triggers": [
+                                   {
+                                        "Condition":"{SwitchNameFields}",
+                                        "Setters":[
+                                            {
+                                                "Property": "Source",
+                                                "Value": "{Item.Driver.RealName, Converter=StringToUpperString} {Item.Driver.Name, Converter=StringToUpperString}"
+                                            }
+                                        ]
+                                    },
+                                 ]
                 }, 
               ]
             },
