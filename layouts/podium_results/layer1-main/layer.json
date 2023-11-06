@@ -214,6 +214,16 @@
                                                             "Foreground" : "#000000"
                                                         },
                                                         "Triggers" : [
+                                                             {
+                                                                "Condition" : "{Item.IsFinished, Converter=BoolReverse}",
+                                                                "Setters" : [
+                                                                    {
+                                                                        "Property" : "Source",
+                                                                        "Value" : "DNF"
+                                                                    }
+                                                                ]
+                                                                
+                                                            },
                                                             {
                                                                 "Condition" : "{Item.Position, Converter=StringEquals, Parameter=4}",
                                                                 "Setters" : [
@@ -315,7 +325,7 @@
                                                         "Background": "#14141C",
                                                         "RenderIf": "{DarkOfficialRenders}", 
                                                         "BlockType": "text",
-                                                        "Source": "[{Item.Position}TH]",
+                                                        "Source": "{Item.Position}TH",
                                                         "HorizontalAlignment": "Left",
                                                         "FontName" : "{Formula1-Black}",
                                                         "FontSize": "20",
@@ -412,6 +422,15 @@
                                                                         "Value" : "#0C0B11"
                                                                     }
                                                                 ]      
+                                                            },
+                                                            {
+                                                                "Condition" : "{Item.IsFinished, Converter=BoolReverse}",
+                                                                "Setters" : [
+                                                                    {
+                                                                        "Property" : "Source",
+                                                                        "Value" : "DNF"
+                                                                    }
+                                                                ]   
                                                             },
                                                         ]
                                                     }
