@@ -67,6 +67,17 @@
                                                     "VerticalAlignment": "Center",
                                                     "FontName": "{Formula1-Italic}",
                                                     "FontSize": "25",
+                                                    "Triggers": [
+                                                {
+                                                    "Condition": "{SwitchNameFields}",
+                                                    "Setters": [
+                                                        {
+                                                            "Property": "Source",
+                                                            "Value": "{Item.Line0.Driver.RealName, Converter=StringToUpperString}"
+                                                        },  
+                                                    ]
+                                                }
+                                             ]
                                                 },
                                             ]
                                         },
@@ -85,6 +96,17 @@
                                             "FontName": "{Magistral-BoldItalic}",
                                             "Foreground": "{Item.Team.Color}",
                                             "FontSize": "35",
+                                            "Triggers": [
+                                                {
+                                                    "Condition": "{SwitchNameFields}",
+                                                    "Setters": [
+                                                        {
+                                                            "Property": "Source",
+                                                            "Value": "{Item.Line0.Driver.Name, Converter=StringToUpperString}"
+                                                        },  
+                                                    ]
+                                                }
+                                             ]
                                         }
                                      ]
                                   },
@@ -92,7 +114,7 @@
                                         {
                                             "BlockType": "stack",
                                             "HorizontalAlignment": "Left",
-                                            "MarginLeft": 14,
+                                            "MarginLeft": 5,
                                             "Orientation": "Horizontal",
                                             "Items": [
                                                 {
@@ -419,7 +441,18 @@
                                                     "VerticalAlignment": "Center",
                                                     "FontName": "{Formula1-Italic}",
                                                     "Foreground": "{Foregroundwhithe}",
-                                                    "FontSize": "25"
+                                                    "FontSize": "25",
+                                                    "Triggers": [
+                                                {
+                                                    "Condition": "{SwitchNameFields}",
+                                                    "Setters": [
+                                                        {
+                                                            "Property": "Source",
+                                                            "Value": "{Item.Line1.Driver.RealName, Converter=StringToUpperString}"
+                                                        },  
+                                                    ]
+                                                }
+                                             ]
                                                 },
                                             ]
                                         },
@@ -437,7 +470,18 @@
                                             "VerticalAlignment": "Center",
                                             "FontName": "{Magistral-BoldItalic}",
                                             "Foreground": "{Item.Team.Color}",
-                                            "FontSize": "35"
+                                            "FontSize": "35",
+                                            "Triggers": [
+                                                {
+                                                    "Condition": "{SwitchNameFields}",
+                                                    "Setters": [
+                                                        {
+                                                            "Property": "Source",
+                                                            "Value": "{Item.Line1.Driver.Name, Converter=StringToUpperString}"
+                                                        },  
+                                                    ]
+                                                }
+                                             ]
                                         }
                                      ]
                                   },
@@ -445,7 +489,7 @@
                                         {
                                             "BlockType": "stack",
                                             "HorizontalAlignment": "Left",
-                                            "MarginLeft": 14,
+                                            "MarginLeft": 5,
                                             "Orientation": "Horizontal",
                                             "Items": [
                                                 {

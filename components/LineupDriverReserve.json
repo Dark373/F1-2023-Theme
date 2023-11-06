@@ -32,7 +32,6 @@
                         //flag
                         {
                             "BlockType": "image",
-                            "RenderIf":"{ShowCountryFlagsForDrivers}",
                             "Height": 30,
                             "VerticalAlignment": "Center",
                             "ImageOptions": {
@@ -67,7 +66,19 @@
                                             "VerticalAlignment": "Top",
                                             "FontName": "{Formula1-Italic}",
                                             "Foreground": "{FontnameDefault}",
-                                            "FontSize": "35"
+                                            "FontSize": "35",
+                                            "Triggers": [
+                                                {
+                                                    "Condition": "{SwitchNameFields}",
+                                                    "Setters": [
+                                                        {
+                                                            "Property": "Source",
+                                                            "Value": "{Item.Driver.RealName}"
+                                                        },
+                                                         
+                                                    ]
+                                                }
+                                             ]
                                         },
                                         {
                                             "BlockType": "text",
@@ -76,7 +87,19 @@
                                             "VerticalAlignment": "Bottom",
                                             "FontName": "{Magistral-BoldItalic}",
                                             "Foreground": "{Item.Team.Color}",
-                                            "FontSize": "35"
+                                            "FontSize": "35",
+                                            "Triggers": [
+                                                {
+                                                    "Condition": "{SwitchNameFields}",
+                                                    "Setters": [
+                                                        {
+                                                            "Property": "Source",
+                                                            "Value": " {Item.Driver.Name, Converter=StringToUpperString}"
+                                                        },
+                                                         
+                                                    ]
+                                                }
+                                             ]
                                         }
                                      ]
                                   },

@@ -148,7 +148,17 @@
                                                         },
                                                          
                                                     ]
-                                                }
+                                                },
+                                                {
+                                                    "Condition": "{SwitchNameFields}",
+                                                    "Setters": [
+                                                        {
+                                                            "Property": "Source",
+                                                            "Value": "{Item.Driver.RealName, Converter=StringToUpperString} {Item.Driver.Name, Converter=StringToUpperString}"
+                                                        },
+                                                         
+                                                    ]
+                                                },
                     ]
                 }
             ]

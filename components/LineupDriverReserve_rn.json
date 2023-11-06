@@ -38,9 +38,20 @@
                                                     "HorizontalAlignment": "Left",
                                                     "VerticalAlignment": "Center",
                                                     "FontName": "{Formula1-Italic}",
-                                                    "RenderIf": "{RenderInGameNameOnLineUps}",
                                                     "Foreground": "{Foregroundwhithe}",
-                                                    "FontSize": "25"
+                                                    "FontSize": "25",
+                                                    "Triggers": [
+                                                {
+                                                    "Condition": "{SwitchNameFields}",
+                                                    "Setters": [
+                                                        {
+                                                            "Property": "Source",
+                                                            "Value": "{Item.Driver.RealName}"
+                                                        },
+                                                         
+                                                    ]
+                                                }
+                                             ]
                                                 },
                     ]
                 },
@@ -58,7 +69,19 @@
                                             "VerticalAlignment": "Center",
                                             "FontName": "{Magistral-BoldItalic}",
                                             "Foreground": "{Item.Team.Color}",
-                                            "FontSize": "35"
+                                            "FontSize": "35",
+                                            "Triggers": [
+                                                {
+                                                    "Condition": "{SwitchNameFields}",
+                                                    "Setters": [
+                                                        {
+                                                            "Property": "Source",
+                                                            "Value": " {Item.Driver.Name, Converter=StringToUpperString}"
+                                                        },
+                                                         
+                                                    ]
+                                                }
+                                             ]
                                         }
                                      ]
                                   },

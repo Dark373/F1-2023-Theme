@@ -126,6 +126,15 @@
                                                             "Value": "{Item.Line0.Driver.Name, Converter=StringToUpperString}"
                                                         },  
                                                     ]
+                                                },
+                                                {
+                                                    "Condition": "{SwitchNameFields}",
+                                                    "Setters": [
+                                                        {
+                                                            "Property": "Source",
+                                                            "Value": "{Item.Line0.Driver.RealName}"
+                                                        },  
+                                                    ]
                                                 }
                                              ]
                                         },
@@ -133,7 +142,7 @@
                                             "BlockType": "text",
                                             "Source": " {Item.Line0.Driver.RealName, Converter=StringToUpperString}",
                                             "HorizontalAlignment": "Left",
-                                            "VerticalAlignment": "Center",
+                                            "VerticalAlignment": "Bottom",
                                             "FontName": "{Magistral-BoldItalic}",
                                             "Foreground": "{Item.Team.Color}",
                                             "FontSize": "35",
@@ -146,6 +155,15 @@
                                                             "Value": ""
                                                         },
                                                          
+                                                    ]
+                                                },
+                                                {
+                                                    "Condition": "{SwitchNameFields}",
+                                                    "Setters": [
+                                                        {
+                                                            "Property": "Source",
+                                                            "Value": " {Item.Line0.Driver.Name, Converter=StringToUpperString}"
+                                                        },  
                                                     ]
                                                 }
                                              ]
@@ -543,6 +561,15 @@
                                                             "Value": "{Item.Line1.Driver.Name, Converter=StringToUpperString}"
                                                         },  
                                                     ]
+                                                },
+                                                {
+                                                    "Condition": "{SwitchNameFields}",
+                                                    "Setters": [
+                                                        {
+                                                            "Property": "Source",
+                                                            "Value": "{Item.Line1.Driver.RealName}"
+                                                        },  
+                                                    ]
                                                 }
                                              ]
                                         },
@@ -563,6 +590,15 @@
                                                             "Value": ""
                                                         },
                                                          
+                                                    ]
+                                                },
+                                                {
+                                                    "Condition": "{SwitchNameFields}",
+                                                    "Setters": [
+                                                        {
+                                                            "Property": "Source",
+                                                            "Value": " {Item.Line1.Driver.Name, Converter=StringToUpperString}"
+                                                        },  
                                                     ]
                                                 }
                                              ]
