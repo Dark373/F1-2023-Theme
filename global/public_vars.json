@@ -1,7 +1,7 @@
 {
   "DarkOfficialRenders": false,
   "PlainBackground": false,
-  "UseDriverAvatars": true,
+  "UseDriverAvatars": false,
   "TeamsOnDriversStandings": true,
   "DriverNameOnLineUp": false,
   "RenderInGameNameOnLineUps": true,
@@ -10,6 +10,7 @@
   "RealNameOnRenders": false,
   "InGameNameOnRenders": false,
   "FullNameOnRenders": true,
+  "SwitchNameFields": true,
   "TeamChampColour": false,
   "DriverChampColour": false,
   "RenderReserveDriver": false,
