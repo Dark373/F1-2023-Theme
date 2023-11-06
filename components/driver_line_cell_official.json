@@ -185,11 +185,7 @@
                                                         {
                                                             "Property": "Source",
                                                             "Value": "images/suit/reserve.png"
-                                                        },
-                                                        {
-                                                            "Property": "MarginTop",
-                                                            "Value": -12
-                                                        },  
+                                                        }  
                                                     ]
                                                 },
                                              ]
