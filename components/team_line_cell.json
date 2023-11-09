@@ -56,6 +56,11 @@
                              "Value" : "FD8000"
                       },
                       {
+                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=McLaren}",
+                            "Property" : "Source",
+                            "Value" : "images/mclaren.white"
+                      },
+                      {
                              "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=Alfa Romeo}",
                              "Property" : "Background",
                              "Value" : "A50E2D"
@@ -81,15 +86,18 @@
                              "Value" : "03A0E3"
                       },
                       {
-                            "Condition": "{ItemIndex, Converter=NumberGreater, Parameter=0}",
-                            "Property": "Background",
-                            "Value": "{BackgroundDefault}"
-                      },
-                      {
-                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=McLaren}",
-                            "Property" : "Source",
-                            "Value" : "images/mclaren.white"
-                      },
+                                                    "Condition": "{ItemIndex, Converter=NumberGreater, Parameter=0}",
+                                                    "Setters": [
+                                                        {
+                                                            "Property": "Background",
+                                                            "Value": "BackgroundDefault"
+                                                        },
+                                                        {
+                                                            "Property": "Source",
+                                                            "Value": "{Item.Team.LogoPath}"
+                                                        },
+                                                    ]
+                                                },
                    ],
                     "MarginLeft" : 55,
                     "Height": 40,
