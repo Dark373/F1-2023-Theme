@@ -17,7 +17,52 @@
                     }
                 }               
             },
-
+            {
+                    "BlockType": "stack",
+                    "Orientation": "Vertical",
+                    "HorizontalAlignment": "Right",
+                    "VerticalAlignment": "Center",
+                    "MarginTop": 0,
+                    "MarginRight": 0,
+                    "MarginBottom": 0,
+                    "Spacing": 0,
+                    "Items": [
+                        {
+                            "BlockType": "text",
+                            "MarginTop": 0,
+                            "MarginBottom": 0,
+                            "HorizontalAlignment": "Right",
+                            "VerticalAlignment": "Center",
+                            "Source": "[POINTS AFTER THE]",                            
+                            "FontName": "{Formula1-Regular}",
+                            "FontSize": 25,
+                            "Foreground": "000000",
+                            "Triggers": [
+        {
+            "Condition": "{DarkOfficialRenders}",
+            "Property": "Foreground",
+            "Value": "FFFFFF",
+        }
+    ],
+                        },
+                        {
+                            "BlockType": "text",
+                            "VerticalAlignment": "Top",
+                            "HorizontalAlignment": "Right",
+                            "Source": "{GPName, Converter=StringToUpperString} GP",                            
+                            "FontName": "{Formula1-Bold}",
+                            "FontSize": 25,
+                            "Foreground": "000000",
+                            "Triggers": [
+        {
+            "Condition": "{DarkOfficialRenders}",
+            "Property": "Foreground",
+            "Value": "FFFFFF",
+        }
+    ],
+                        },
+                    ]
+                },
             //table
             {
                 "Name": "mainTable",

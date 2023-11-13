@@ -167,12 +167,12 @@
                             "Vars" :
                             {
                                 "bg" : "{FastestLapRaceStickerBackground}",
-                                "tyre" : "AVAILABLE TYRES:",
-                                "soft" :  "SOFT",
-                                "medium": "MEDIUM",
-                                "hard":   "HARD",
-                                "int" :   "INTERMEDIATE",
-                                "wet":    "WET"
+                                "tyre" : "[AVAILABLE TYRES]:",
+                                "soft" :  "[SOFT]",
+                                "medium": "[MEDIUM]",
+                                "hard":   "[HARD]",
+                                "int" :   "[INTERMEDIATE]",
+                                "wet":    "[WET]"
                             }
                         }
                     }

@@ -1,6 +1,5 @@
 {
     "BlockRoot": {
-        "Name": "root",
         "BlockType": "dock",
         "Orientation" : "Vertical",
         "Items": [

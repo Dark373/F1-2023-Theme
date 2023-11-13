@@ -6,6 +6,46 @@
         "Orientation": "Vertical",
         "Items": [
             //header block
+            {                            
+                            "BlockType": "text",
+                            "PaddingLeft": 5,
+                            "PaddingRight": 4,
+                            "Background": "000000",
+                            "MarginTop": 0,
+                            "MarginBottom": -20,
+                            "VerticalAlignment": "Center",
+                            "HorizontalAlignment": "Right",
+                            "Source": "[{StartPositionsFrom, Converter=NumberAdd, Parameter=1}TH] - [{DriverLimit}TH]",                            
+                            "FontName": "{Formula1-Black}",
+                            "FontSize": 20,
+                            "Foreground": "FFFFFF",
+                            "Triggers":[
+                                    
+                                    {
+                                        "Condition":"{DriverLimit, Converter=NumberEquals, Parameter=1}",
+                                        "Setters":[
+                                            {
+                                                "Property": "Source",
+                                                "Value": "{StartPositionsFrom, Converter=NumberAdd, Parameter=1}ST - {{DriverLimit}TH]"
+                                            }
+                                        ]
+                                    },
+
+                                    {
+                                        "Condition":"{DarkOfficialRenders}",
+                                        "Setters":[
+                                            {
+                                                "Property": "Background",
+                                                "Value": "FFFFFF"
+                                            },
+                                            {
+                                                "Property": "Foreground",
+                                                "Value": "000000"
+                                            }
+                                        ]
+                                    },
+                                ]
+                            },
             {               
                 "BlockType": "component",
                 "ComponentName": "header_block_drivers_official",
@@ -17,7 +57,53 @@
                     }
                 }               
             },
-
+            
+            {
+                    "BlockType": "stack",
+                    "Orientation": "Vertical",
+                    "HorizontalAlignment": "Right",
+                    "VerticalAlignment": "Center",
+                    "MarginTop": 0,
+                    "MarginRight": 0,
+                    "MarginBottom": 0,
+                    "Spacing": 0,
+                    "Items": [
+                        {
+                            "BlockType": "text",
+                            "MarginTop": 0,
+                            "MarginBottom": 0,
+                            "HorizontalAlignment": "Right",
+                            "VerticalAlignment": "Center",
+                            "Source": "[POINTS AFTER THE]",                            
+                            "FontName": "{Formula1-Regular}",
+                            "FontSize": 25,
+                            "Foreground": "000000",
+                            "Triggers": [
+        {
+            "Condition": "{DarkOfficialRenders}",
+            "Property": "Foreground",
+            "Value": "FFFFFF",
+        }
+    ],
+                        },
+                        {
+                            "BlockType": "text",
+                            "VerticalAlignment": "Top",
+                            "HorizontalAlignment": "Right",
+                            "Source": "{GPName, Converter=StringToUpperString} GP",                            
+                            "FontName": "{Formula1-Bold}",
+                            "FontSize": 25,
+                            "Foreground": "000000",
+                            "Triggers": [
+        {
+            "Condition": "{DarkOfficialRenders}",
+            "Property": "Foreground",
+            "Value": "FFFFFF",
+        }
+    ],
+                        },
+                    ]
+                },
             //table
             {
                 "Name": "mainTable",

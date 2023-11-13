@@ -33,6 +33,7 @@
                     },
                     {
                         "BlockType" : "itemstack",
+                        "RenderIf": "{SecondCalendarEventsInColumn, Converter=NumberGreater, Parameter=0}",
                         "Orientation" : "Vertical",
                         "ItemStackOptions" : {
                             "ItemSource" : "{Events.Events}",

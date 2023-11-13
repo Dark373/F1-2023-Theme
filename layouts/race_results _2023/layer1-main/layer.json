@@ -167,13 +167,13 @@
                             "Vars" :
                             {
                                 "bg" : "{FastestLapRaceStickerBackground}",
-                                "header" : "FASTEST LAP",
+                                "header" : "[FASTEST LAP]",
                                 "main" : "{Session.FastestLapDriver.Name}",
                                 "main2": "{Session.FastestLapDriver.RealName, Converter=StringToUpperString}",
                                 "team": "{Session.FastestLapDriver.Description, Converter=StringToUpperString}",
                                 "data" : "{Session.FastestLapTime}",
-                                "lap": "LAP {Session.FastestLapNumLap}",
-                                "point": "(+1 point)"
+                                "lap": "[LAP] {Session.FastestLapNumLap}",
+                                "point": "(+1 [point])"
                             }
                         }
                     },
