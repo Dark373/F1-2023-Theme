@@ -37,7 +37,7 @@
                         {
                             "BlockType": "text",
                             "VerticalAlignment": "Center",
-                            "Source": "<header>",
+                            "Source": "[<header>]",
                             "FontName": "{FontNameBold}",
                             "FontSize": 60,
                             "Foreground": "{Foregroundwhithe}"

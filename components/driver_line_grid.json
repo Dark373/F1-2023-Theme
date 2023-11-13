@@ -33,7 +33,7 @@
                     "Width" : 160,
                     "Height" : 65,
                     "Source": "[{Item.PositionString}TH]",
-                    "HorizontalAlignment": "Left",
+                    "HorizontalAlignment": "Center",
                     "VerticalAlignment": "Center",
                     "MarginRight": 0,
                     "Foreground" : "#000000",
@@ -44,6 +44,11 @@
                         "HorizontalAlignment" : "Center"
                     },
                     "Triggers" : [
+                        {
+                            "Condition" : "{Item.PositionString, Converter=NumberGreater, Parameter=3}",
+                            "Property" : "Source",
+                            "Value" : "[TH]"
+                        },
                         {
                             "Condition" : "{DarkOfficialRenders, Converter=BoolReverse}",
                             "Property" : "Foreground",

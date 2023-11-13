@@ -32,13 +32,12 @@
                     "Name": "headerSessionLine",
                     "BlockType": "stack",
                     "VerticalAlignment": "Center",
-                    "MarginLeft": 0,
-                    "Spacing": 0,
                     "Items": [
                         {
                             "BlockType": "text",
+                            "PaddingTop": 8,
                             "VerticalAlignment": "Center",
-                            "Source": "DRIVERS' STANDINGS",
+                            "Source": "[DRIVERS' STANDINGS]",
                             "FontName": "{FontNameBold}",
                             "FontSize": 80,
                             "Foreground": "{Foregroundwhithe}"

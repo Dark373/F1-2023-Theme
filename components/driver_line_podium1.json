@@ -132,6 +132,24 @@
                     "FontSize": 20,
                     "Triggers": [
                                    {
+                                        "Condition":"{RealNameOnRenders}",
+                                        "Setters":[
+                                            {
+                                                "Property": "Source",
+                                                "Value": "{Item.Driver.RealName, Converter=StringToUpperString}"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "Condition":"{InGameNameOnRenders}",
+                                        "Setters":[
+                                            {
+                                                "Property": "Source",
+                                                "Value": "{Item.Driver.InGameName, Converter=StringToUpperString}"
+                                            }
+                                        ]
+                                   },
+                                   {
                                         "Condition":"{SwitchNameFields}",
                                         "Setters":[
                                             {
@@ -153,6 +171,24 @@
                     "FontName": "{Formula1-Bold}",
                     "FontSize": 20,
                     "Triggers": [
+                                   {
+                                        "Condition":"{RealNameOnRenders}",
+                                        "Setters":[
+                                            {
+                                                "Property": "Source",
+                                                "Value": ""
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "Condition":"{InGameNameOnRenders}",
+                                        "Setters":[
+                                            {
+                                                "Property": "Source",
+                                                "Value": ""
+                                            }
+                                        ]
+                                   },
                                    {
                                         "Condition":"{SwitchNameFields}",
                                         "Setters":[

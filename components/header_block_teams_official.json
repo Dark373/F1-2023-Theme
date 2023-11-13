@@ -1,6 +1,7 @@
 //header block
 {
     "Name": "headerBlock",
+    "MarginBottom": -70,
     "BlockType": "dock",
     "Orientation": "Horizontal",
     "Items": [
@@ -15,6 +16,7 @@
         {
             "Name": "f1-logo",
             "BlockType": "image",
+            "MarginBottom": 4,
             "Height": 44,
             "HorizontalAlignment" : "Left",
             "Source": "images/f1-logo.png",
@@ -53,7 +55,7 @@
                         {
                             "BlockType": "text",
                             "VerticalAlignment": "Center",
-                            "Source": " TEAM",                            
+                            "Source": " [TEAM]",                            
                             "FontName": "{Formula1-Black}",
                             "FontSize": 57,
                             "Foreground": "000000",
@@ -77,7 +79,7 @@
                         {
                             "BlockType": "text",
                             "VerticalAlignment": "Center",
-                            "Source": "STANDINGS",                            
+                            "Source": "[STANDINGS]",                            
                             "FontName": "{Formula1-Black}",
                             "FontSize": 57,
                             "Foreground": "000000",
@@ -89,8 +91,8 @@
         }
     ],
                         },
-                    ]
-                },       
+             ]
+          },      
             ]
         },
     ]

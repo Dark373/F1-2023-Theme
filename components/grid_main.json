@@ -75,7 +75,7 @@
                             "Items" : [
                                 {
                                     "BlockType" : "text",
-                                    "Source" : "STARTING GRID",
+                                    "Source" : "[STARTING GRID]",
                                     "FontSize" : 45,
                                     "Foreground" : "#ffffff",
                                     "HorizontalAlignment": "Right",

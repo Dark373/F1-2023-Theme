@@ -1,7 +1,7 @@
 {
     "BlockType": "dock",
     //"PaddingLeft": 0,
-    "PaddingRight": 0,
+    "PaddingBottom": 0,
     "RenderIf" : "<renderif>",
     "BackgroundImage": "images/drivers/{Item.Team.Name}drivers.png",
     "Height" : 92,
@@ -179,7 +179,7 @@
                             "Source" : "images/suit/{Item.Team.Name}_{Item.SeatPosition}",
                             "Height" : "180",
                             "Triggers" : [
-                                              {
+                        {
                                                     "Condition": "{Item.SeatPosition, Converter=NumberEquals, Parameter=0}",
                                                     "Setters": [
                                                         {

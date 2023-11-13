@@ -38,7 +38,7 @@
                         {
                             "BlockType": "text",
                             "VerticalAlignment": "Center",
-                            "Source": "LINE-UP",
+                            "Source": "[LINE-UP]",
                             "FontName": "{Formula1-Black}",
                             "FontSize": 80,
                             "Foreground": "{Foregroundwhithe}"

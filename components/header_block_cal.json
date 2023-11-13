@@ -49,9 +49,20 @@
                             "Source": "{Season.Name, Converter=StringToUpperString}",                            
                             "FontName": "{Formula1-Black}",
                             "FontSize": 110,
-                            "Foreground": "FF0000"
+                            "Foreground": "FF0000",
+                            "Triggers":[
+                                    {
+                                        "Condition":"{SecondCalendarEventsInColumn, Converter=NumberEquals, Parameter=0}",
+                                        "Setters":[
+                                            {
+                                                "Property": "FontSize",
+                                                "Value": 70
+                                            }
+                                        ]
+                                    }
+                                ]
                         },
-                        ]
+                     ]
                 },
                 {
                     "Name": "headerSessionLine",
@@ -66,14 +77,23 @@
                             "Foreground": "000000",
                             "FontSize": 110,
                             "FontName": "Formula1-Black",
-                            "Source": "CALENDAR",
+                            "Source": "[CALENDAR]",
                             "Triggers": [
         {
             "Condition": "{DarkOfficialRenders}",
             "Property": "Foreground",
             "Value": "FFFFFF",
-        }
-    ],
+        },
+                                    {
+                                        "Condition":"{SecondCalendarEventsInColumn, Converter=NumberEquals, Parameter=0}",
+                                        "Setters":[
+                                            {
+                                                "Property": "FontSize",
+                                                "Value": 108
+                                            }
+                                        ]
+                                    }
+                                ]
                         },
                     ]
                 },       

@@ -32,13 +32,12 @@
                     "Name": "headerSessionLine",
                     "BlockType": "stack",
                     "VerticalAlignment": "Center",
-                    "MarginLeft": 0,
-                    "Spacing": 0,
                     "Items": [
                         {
                             "BlockType": "text",
                             "VerticalAlignment": "Center",
-                            "Source": "CONSTRUCTORS' STANDINGS",
+                            "PaddingTop": 8,
+                            "Source": "[CONSTRUCTORS' STANDINGS]",
                             "FontName": "{FontNameBold}",
                             "FontSize": 60,
                             "Foreground": "{Foregroundwhithe}"

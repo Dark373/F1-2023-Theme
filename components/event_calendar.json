@@ -31,7 +31,7 @@
                                     {
                                 "BlockType": "text",
                                 "Padding": "80, 40",
-                                "Source": "R{Item.Position, Converter=NumberSubtract, Parameter=1}",
+                                "Source": "R{Item.Position, Converter=NumberSubtract, Parameter=0}",
                                 "HorizontalAlignment": "Center",
                                 "VerticalAlignment": "Center",
                                 "FontName": "{Formula1-Black}",
