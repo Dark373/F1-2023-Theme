@@ -115,20 +115,16 @@
             "Property": "Foreground",
             "Value": "000000",
         },
+         {
+            "Condition": "{Item.IsRaceFastestLap}",
+            "Property": "Foreground",
+            "Value": "{FastestLapRaceSelectedForeground}",
+        },
         {
             "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
             "Property": "ColorizeBackgroundOptions.Enabled",
             "Value": true
         },
-        {
-                                                        "Condition": "{Item.IsRaceFastestLap}",
-                                                        "Setters": [
-                                                            {
-                                                                "Property": "Foreground",
-                                                                "Value": "800080"
-                                                            }
-                                                        ]
-                                                    },
         {
                                         "Condition" : "{Item.FastestLapTime, Converter=EmptyObjectToTrue}",
                                         "Property" : "Source",

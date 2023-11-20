@@ -179,19 +179,14 @@
     },
     "Triggers": [
          {
-                                                                "Condition" : "{Item.IsRaceFastestLap}",
-                                                                "Setters" :
-                                                                [
-                                                                    {
-                                                                        "Property" : "Foreground",
-                                                                        "Value" : "{FastestLapRaceSelectedForeground}"
-                                                                    }
-                                                                ]
-                                                            },
-         {
             "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
             "Property": "Foreground",
             "Value": "000000",
+        },
+        {
+            "Condition": "{Item.IsRaceFastestLap}",
+            "Property": "Foreground",
+            "Value": "{FastestLapRaceSelectedForeground}",
         },
         {
             "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
