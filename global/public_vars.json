@@ -16,13 +16,13 @@
   "RenderReserveDriver": false,
   "RenderPenaltySeparator": true,
   "RenderPenaltyVerdict": false,
-  "ChangeWordOrder": true,
-  "DriverLimit": 10,
+  "ChangeWordOrder": false,
+  "DriverLimit": 20,
   "StartPositionsFrom": 0,
   "FontSizeOnOfficialRenders": 38,
   "SecondCalendarEventsInColumn": 14,
   "LogoSize": 44,
   "ReserveDriverMax": 0,
   "StewardReportType": "Report",
-  "GPName": "Qatar"
+  "GPName": "Change me in settings"
 }
