@@ -64,6 +64,11 @@
             "Condition": "{DarkOfficialRenders}",
             "Property": "Foreground",
             "Value": "FFFFFF",
+        },
+        {
+            "Condition": "{ChangeWordOrder}",
+            "Property": "Source",
+            "Value": " [STANDINGS]",
         }
     ],
                         },
@@ -88,6 +93,11 @@
             "Condition": "{DarkOfficialRenders}",
             "Property": "Foreground",
             "Value": "FFFFFF",
+        },
+        {
+            "Condition": "{ChangeWordOrder}",
+            "Property": "Source",
+            "Value": "[TEAM]",
         }
     ],
                         },

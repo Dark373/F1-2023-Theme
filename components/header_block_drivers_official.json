@@ -13,7 +13,7 @@
             "Spacing": 0,
             "HorizontalAlignment": "Left",
             "Items": [
-            {
+        {
             "Name": "f1-logo",
             "BlockType": "image",
             "MarginBottom": 4,
@@ -64,6 +64,11 @@
             "Condition": "{DarkOfficialRenders}",
             "Property": "Foreground",
             "Value": "FFFFFF",
+        },
+        {
+            "Condition": "{ChangeWordOrder}",
+            "Property": "Source",
+            "Value": " [STANDINGS]",
         }
     ],
                         },
@@ -88,12 +93,17 @@
             "Condition": "{DarkOfficialRenders}",
             "Property": "Foreground",
             "Value": "FFFFFF",
-        }
+        },
+        {
+            "Condition": "{ChangeWordOrder}",
+            "Property": "Source",
+            "Value": "[DRIVER]",
+        },
     ],
-                        },
-             ]
-          },       
+                       },
+                    ]
+                },       
             ]
         },
-    ]
+    ],
 }
