@@ -1,7 +1,7 @@
 {
-  "DarkOfficialRenders": true,
+  "DarkOfficialRenders": false,
   "PlainBackground": false,
-  "UseDriverAvatars": false,
+  "UseDriverAvatars": true,
   "TeamsOnDriversStandings": true,
   "DriverNameOnLineUp": false,
   "RenderInGameNameOnLineUps": true,
@@ -11,18 +11,18 @@
   "InGameNameOnRenders": false,
   "FullNameOnRenders": true,
   "SwitchNameFields": false,
-  "TeamChampColour": false,
-  "DriverChampColour": false,
+  "ChampionColour": false,
   "RenderReserveDriver": false,
   "RenderPenaltySeparator": true,
   "RenderPenaltyVerdict": false,
   "ChangeWordOrder": false,
+  "V2Renders": true,
   "DriverLimit": 20,
   "StartPositionsFrom": 0,
-  "FontSizeOnOfficialRenders": 38,
-  "SecondCalendarEventsInColumn": 14,
+  "FontSizeOnOfficialRenders": 36,
+  "SecondCalendarEventsInColumn": 5,
   "LogoSize": 44,
   "ReserveDriverMax": 0,
   "StewardReportType": "Report",
-  "GPName": "Change me in settings"
+  "GPName": "Sao Paulo"
 }
