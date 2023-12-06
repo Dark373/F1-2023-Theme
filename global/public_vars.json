@@ -1,7 +1,7 @@
 {
-  "DarkOfficialRenders": false,
+  "DarkOfficialRenders": true,
   "PlainBackground": false,
-  "UseDriverAvatars": true,
+  "UseDriverAvatars": false,
   "TeamsOnDriversStandings": true,
   "DriverNameOnLineUp": false,
   "RenderInGameNameOnLineUps": true,
@@ -19,10 +19,10 @@
   "V2Renders": true,
   "DriverLimit": 20,
   "StartPositionsFrom": 0,
-  "FontSizeOnOfficialRenders": 36,
-  "SecondCalendarEventsInColumn": 5,
+  "FontSizeOnOfficialRenders": 38,
+  "SecondCalendarEventsInColumn": 14,
   "LogoSize": 44,
   "ReserveDriverMax": 0,
   "StewardReportType": "Report",
-  "GPName": "Sao Paulo"
+  "GPName": "Change me"
 }
