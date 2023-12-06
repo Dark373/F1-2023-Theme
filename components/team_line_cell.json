@@ -4,17 +4,22 @@
     "VerticalAlignment" : "Center",
     "Padding": "0, 0",
     "Background": "{BackgroundDefault}",
-    "ColorizeBackground": {
-        "Enabled": false,
-        "Color": "#ffffff",
-        "BlendPercentage": 100
-    },
     "Triggers": [
         {
             "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
-            "Property": "ColorizeBackgroundOptions.Enabled",
-            "Value": true
-        }
+            "Property": "Background",
+            "Value": "FFFFFF"
+        },
+        {
+            "Condition": "{ChampionColour}",
+            "Property": "Background",
+            "Value": "E9C652"
+        },
+        {
+            "Condition": "{ItemIndex, Converter=NumberGreater, Parameter=0}",
+            "Property": "Background",
+            "Value": "{BackgroundDefault}"
+        },
     ],
     "Items": [
         {
@@ -29,6 +34,26 @@
                             "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
                             "Property": "Background",
                             "Value": "{Item.Team.Color}"
+                      },
+                      {
+                             "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=carlin}",
+                             "Property" : "Background",
+                             "Value" : "000000"
+                      },
+                      {
+                             "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=prema}",
+                             "Property" : "Background",
+                             "Value" : "FFFFFF"
+                      },
+                      {
+                             "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=var}",
+                             "Property" : "Background",
+                             "Value" : "FFFFFF"
+                      },
+                      {
+                             "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=hitech}",
+                             "Property" : "Background",
+                             "Value" : "FFFFFF"
                       },
                       {
                              "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=Red Bull}",

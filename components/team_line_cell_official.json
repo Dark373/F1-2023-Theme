@@ -30,29 +30,48 @@
             "Items": [
                 {
                     "BlockType": "text", 
-                    "Opacity": 0,
+                    "Opacity": 100,
                     "MaxWidth": 1000,                    
-                    "Source": "{Item.Team.Name, Converter=StringToUpperString}",
+                    "Source": "[{Item.Team.FullName, Converter=StringToUpperString}]",
                     "HorizontalAlignment": "Left",
-                    "MarginLeft": 212,
+                    "MarginTop": 4,
+                    "MarginLeft": 260,
                     "FontName": "{Formula1-Black}",
-                    "FontSize": 36,
+                    "FontSize": 42,
                     "VerticalAlignment": "Center",
                     "Foreground": "FFFFFF",
-                    "TextOptionsExtern": "teamCell",
                     "Triggers" : [
                         {
                             "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=haas}",
                             "Property" : "Foreground",
                             "Value" : "#000000"
                         },
-                                                {
+                        {
+                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=mercedes}",
+                            "Property" : "Foreground",
+                            "Value" : "#000000"
+                        },
+                        {
+                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=virtuosi}",
+                            "Property" : "Foreground",
+                            "Value" : "#000000"
+                        },
+                        {
+                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=ART}",
+                            "Property" : "Foreground",
+                            "Value" : "#000000"
+                        },
+                        {
                             "Condition" : "{Item.Team.Name, Converter=EmptyObjectToTrue}",
                             "Property" : "Foreground",
                             "Value" : "#000000"
                         },
-                                                         
-                                                    ]
+                        {
+                            "Condition" : "{NotF1SeasonOrCustomTeams}",
+                            "Property" : "MarginLeft",
+                            "Value" : "240"
+                        },                                        
+                    ]
                 }               
             ]
         }

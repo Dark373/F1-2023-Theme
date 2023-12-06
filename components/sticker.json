@@ -75,7 +75,9 @@
             "VerticalAlignment" : "Center",
             "FontName": "{Formula1-Italic}",   
             "Foreground" : "C7C8CC",
-            "FontSize" : 35           
+            "RenderIf": "{Session.IsRaceMajorClassified}",
+    //        "RenderIf": "{Session.RaceType, Converter=StringEquals, Parameter=Main}",
+            "FontSize" : 35 
         },
     ]
 }

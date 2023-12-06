@@ -3,7 +3,7 @@
     //"PaddingLeft": 0,
     "PaddingBottom": 0,
     "RenderIf" : "<renderif>",
-    "BackgroundImage": "images/drivers/{Item.Team.Name}drivers.png",
+    "BackgroundImage": "images/team/{Item.Team.Name}standings.png",
     "Height" : 92,
     "Width" : 730,
     "MarginTop" : 0,
@@ -26,7 +26,7 @@
             "Setters" : [
                 {
                     "Property" : "BackgroundImage",
-                    "Value" : "images/drivers/reservedrivers.png"
+                    "Value" : "images/team/reservestandings.png"
                 },
             ]
         }
@@ -155,6 +155,16 @@
                                                         {
                                                             "Property": "Source",
                                                             "Value": "{Item.Driver.RealName, Converter=StringToUpperString} {Item.Driver.Name, Converter=StringToUpperString}"
+                                                        },
+                                                         
+                                                    ]
+                                                },
+                                                {
+                                                    "Condition": "{NotF1SeasonOrCustomTeams}",
+                                                    "Setters": [
+                                                        {
+                                                            "Property": "MarginLeft",
+                                                            "Value": 220
                                                         },
                                                          
                                                     ]

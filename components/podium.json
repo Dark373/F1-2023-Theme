@@ -55,6 +55,26 @@
                                             "Value" : "03A0E3"
                                         },
                                         {
+                                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=var}",
+                                            "Property" : "Background",
+                                            "Value" : "FFFFFF"
+                                        },
+                                        {
+                                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=prema}",
+                                            "Property" : "Background",
+                                            "Value" : "FFFFFF"
+                                        },
+                                        {
+                                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=trident}",
+                                            "Property" : "Background",
+                                            "Value" : "FFFFFF"
+                                        },
+                                        {
+                                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=carlin}",
+                                            "Property" : "Background",
+                                            "Value" : "000000"
+                                        },
+                                        {
                                             "Condition" : "{Item.PositionString, Converter=StringEquals, Parameter=1}",
                                             "Property" : "Height",
                                             "Value" : "420"
@@ -105,6 +125,26 @@
                                             "Property" : "Foreground",
                                             "Value" : "000000"
                                 },
+                                        {
+                                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=var}",
+                                            "Property" : "Foreground",
+                                            "Value" : "000000"
+                                        },
+                                        {
+                                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=prema}",
+                                            "Property" : "Foreground",
+                                            "Value" : "000000"
+                                        },
+                                        {
+                                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=trident}",
+                                            "Property" : "Foreground",
+                                            "Value" : "000000"
+                                        },
+                                        {
+                                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=art}",
+                                            "Property" : "Foreground",
+                                            "Value" : "000000"
+                                        },
                                 {
                                     "Condition" : "{Item.PositionString, Converter=StringEquals, Parameter=2}",
                                     "Setters" : [
@@ -147,6 +187,26 @@
                                             "Property" : "Foreground",
                                             "Value" : "000000"
                                 },
+                                        {
+                                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=var}",
+                                            "Property" : "Foreground",
+                                            "Value" : "000000"
+                                        },
+                                        {
+                                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=prema}",
+                                            "Property" : "Foreground",
+                                            "Value" : "000000"
+                                        },
+                                        {
+                                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=trident}",
+                                            "Property" : "Foreground",
+                                            "Value" : "000000"
+                                        },
+                                        {
+                                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=art}",
+                                            "Property" : "Foreground",
+                                            "Value" : "000000"
+                                        },
                                 {
                                             "Condition" : "{Item.PositionString, Converter=StringEquals, Parameter=1}",
                                             "Property" : "Source",

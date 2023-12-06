@@ -32,7 +32,7 @@
                     "BlockType": "text",
                     "Width" : 160,
                     "Height" : 65,
-                    "Source": "[{Item.PositionString}TH]",
+                    "Source": "[{Item.Position}TH]",
                     "HorizontalAlignment": "Center",
                     "VerticalAlignment": "Center",
                     "MarginRight": 0,
@@ -44,11 +44,6 @@
                         "HorizontalAlignment" : "Center"
                     },
                     "Triggers" : [
-                        {
-                            "Condition" : "{Item.PositionString, Converter=NumberGreater, Parameter=3}",
-                            "Property" : "Source",
-                            "Value" : "[TH]"
-                        },
                         {
                             "Condition" : "{DarkOfficialRenders, Converter=BoolReverse}",
                             "Property" : "Foreground",
@@ -86,6 +81,26 @@
                         },
                         {
                             "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=haas}",
+                            "Property" : "Foreground",
+                            "Value" : "#000000"
+                        },
+                        {
+                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=art}",
+                            "Property" : "Foreground",
+                            "Value" : "#000000"
+                        },
+                        {
+                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=virtuosi}",
+                            "Property" : "Foreground",
+                            "Value" : "#000000"
+                        },
+                        {
+                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=renault}",
+                            "Property" : "Foreground",
+                            "Value" : "#000000"
+                        },
+                        {
+                            "Condition" : "{Item.Team.Name, Converter=StringEquals, Parameter=prema}",
                             "Property" : "Foreground",
                             "Value" : "#000000"
                         },
