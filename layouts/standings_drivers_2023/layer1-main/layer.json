@@ -87,12 +87,7 @@
                                 "BlockType": "dock",
                                 "PaddingLeft" : 12,
                                 "PaddingRight" : 12,
-                                "Background": "{BackgroundDefault}",
-                                "ColorizeBackground": {
-                                       "Enabled": false,
-                                       "Color": "#ffffff",
-                                       "BlendPercentage": 100
-                                },                                
+                                "Background": "{BackgroundDefault}",                                
                                 "Items": [                                    
                                     {
                                         "BlockType": "text",
@@ -120,8 +115,18 @@
         },
         {
             "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
-            "Property": "ColorizeBackgroundOptions.Enabled",
-            "Value": true
+            "Property": "Background",
+            "Value": "FFFFFF"
+        },
+        {
+            "Condition": "{ChampionColour}",
+            "Property": "Background",
+            "Value": "E9C652"
+        },
+        {
+            "Condition": "{ItemIndex, Converter=NumberGreater, Parameter=0}",
+            "Property": "Background",
+            "Value": "{BackgroundDefault}"
         },
                                     {
                                         "Condition" : "{Standings.IsPositionJumpForDriversExists}",
@@ -139,11 +144,6 @@
                                 "Padding": "40, 0",
                                 "FontName": "{Formula1-Italic}",
                                 "Background": "{BackgroundDefault}",
-    "ColorizeBackground": {
-        "Enabled": false,
-        "Color": "#ffffff",
-        "BlendPercentage": 100
-    },
     "Triggers": [
          {
             "Condition": "{Item.Index, Converter=NumberEquals, Parameter=0}",
@@ -152,9 +152,19 @@
         },
         {
             "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
-            "Property": "ColorizeBackgroundOptions.Enabled",
-            "Value": true
-        }
+            "Property": "Background",
+            "Value": "FFFFFF"
+        },
+        {
+            "Condition": "{ChampionColour}",
+            "Property": "Background",
+            "Value": "E9C652"
+        },
+        {
+            "Condition": "{ItemIndex, Converter=NumberGreater, Parameter=0}",
+            "Property": "Background",
+            "Value": "{BackgroundDefault}"
+        },
     ],
                                 "Source" : "+{Item.PointsToLeaderDiff}",
                                 "Foreground" : "{ForegroundDefault}",

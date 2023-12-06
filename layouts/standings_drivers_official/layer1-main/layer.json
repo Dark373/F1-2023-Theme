@@ -169,7 +169,7 @@
             "Value": "0",
         },
         {
-            "Condition": "{TeamChampColour}",
+            "Condition": "{ChampionColour}",
             "Property": "Foreground",
             "Value": "E9C652",
         },
