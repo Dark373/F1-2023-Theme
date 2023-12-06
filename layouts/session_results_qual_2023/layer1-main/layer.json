@@ -74,11 +74,6 @@
                                 "VerticalAlignment" : "Center",
                                 "HorizontalAlignment" : "Center",
                                 "Background": "{BackgroundDefault}",
-    "ColorizeBackground": {
-        "Enabled": false,
-        "Color": "#ffffff",
-        "BlendPercentage": 100
-    },
     "Triggers": [
         {
             "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
@@ -87,9 +82,19 @@
         },
         {
             "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
-            "Property": "ColorizeBackgroundOptions.Enabled",
-            "Value": true
-        }
+            "Property": "Background",
+            "Value": "FFFFFF"
+        },
+        {
+            "Condition": "{ChampionColour}",
+            "Property": "Background",
+            "Value": "E9C652"
+        },
+        {
+            "Condition": "{ItemIndex, Converter=NumberGreater, Parameter=0}",
+            "Property": "Background",
+            "Value": "{BackgroundDefault}"
+        },
     ], 
                                 "Items" :[
                                     {
@@ -126,17 +131,22 @@
                                 "VerticalAlignment" : "Center",
                                 "HorizontalAlignment" : "Center",
                                 "Background": "{BackgroundDefault}",
-    "ColorizeBackground": {
-        "Enabled": false,
-        "Color": "#ffffff",
-        "BlendPercentage": 100
-    },
     "Triggers": [
         {
             "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
-            "Property": "ColorizeBackgroundOptions.Enabled",
-            "Value": true
-        }
+            "Property": "Background",
+            "Value": "FFFFFF"
+        },
+        {
+            "Condition": "{ChampionColour}",
+            "Property": "Background",
+            "Value": "E9C652"
+        },
+        {
+            "Condition": "{ItemIndex, Converter=NumberGreater, Parameter=0}",
+            "Property": "Background",
+            "Value": "{BackgroundDefault}"
+        },
     ], 
                                 "Items" :[
                                     {
