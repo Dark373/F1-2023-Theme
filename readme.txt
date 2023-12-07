@@ -24,3 +24,5 @@ DriverLimit: 10 & StartPositionsFrom: 0 = Top 10
 
 DriverLimit: 20 & StartPositionsFrom: 9 = Positions 10-20
 (Or all positions past P9)
+
+To add F2 logos to the theme, you must copy and paste the logos from the "logos" folder in the theme and paste them in the images/logos/teams folder in your app.
