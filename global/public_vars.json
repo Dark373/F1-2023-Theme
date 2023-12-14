@@ -16,7 +16,6 @@
   "RenderPenaltySeparator": true,
   "RenderPenaltyVerdict": false,
   "ChangeWordOrder": false,
-  "V2Renders": true,
   "DriverLimit": 20,
   "StartPositionsFrom": 0,
   "FontSizeOnOfficialRenders": 38,
