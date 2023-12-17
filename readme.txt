@@ -23,6 +23,10 @@ DriverLimit: 10 & StartPositionsFrom: 0 = Top 10
 (Change DriverLimit to get any Top ... positions you wish)
 
 DriverLimit: 20 & StartPositionsFrom: 9 = Positions 10-20
-(Or all positions past P9)
+(Or all positions past P9).
 
-To add F2 logos to the theme, you must copy and paste the logos from the "logos" folder in the theme and paste them in the images/logos/teams folder in your app.
+
+To add F2 logos to renders:
+user\mods\F1-2023-Theme-V2-main\images\logos (or V1)
+Copy and paste all logos to the following:
+RacingLeagueTools_v075_portable\images\logos\teams
